@@ -133,20 +133,20 @@ if age < 18:
 else: 
   print("you are an adult")
 
-name = input("What is your name?")
-relative = input("What is your relative's name?")
-age = int(input("What is your age?"))
+# name = input("What is your name?")
+# relative = input("What is your relative's name?")
+# age = int(input("What is your age?"))
 
-if age < 20:
-  print("I am young.")
-elif age < 30:
-  print("I am vicenarian")
-elif age < 40:
-  print("I am tricenarian")
-elif age < 50:
-  print("I am quadragenarian")
-else:
-  print("I am old")
+# if age < 20:
+#   print("I am young.")
+# elif age < 30:
+#   print("I am vicenarian")
+# elif age < 40:
+#   print("I am tricenarian")
+# elif age < 50:
+#   print("I am quadragenarian")
+# else:
+#   print("I am old")
 
 # Decision Making Practice #1
 # Using the variables num1 and num2, which are fed with user input (just like in the provided code), create a flow control structure that compares the values of the variables, and returns a result according to the case:
@@ -165,15 +165,15 @@ else:
 # "num2 is greater than num1"
 # "num1 and num2 are equal"
 
-num1 = int(input("Enter a number:"))
-num2 = int(input("Enter a number:"))
+# num1 = int(input("Enter a number:"))
+# num2 = int(input("Enter a number:"))
 
-if num1 > num2:
-  print("num1 is greater than num2")
-elif num2 > num1:
-  print("num2 is greater than num1")
-elif num1 == num2:
-  print("num1 and num2 are equal")
+# if num1 > num2:
+#   print("num1 is greater than num2")
+# elif num2 > num1:
+#   print("num2 is greater than num1")
+# elif num1 == num2:
+#   print("num1 and num2 are equal")
   
 # Decision Making Practice #2
 # The laws of a certain country establish that an adult can drive if they are of legal age (18 years or older), and have a driver's license.
@@ -191,7 +191,7 @@ age = 16
 has_license = False
 if age >= 18 and has_license == True:
   print("You can drive")
-elif age <= 18 and has_license == False:
+elif age < 18 and has_license == False:
   print("You can't drive yet. You must be 18 years old and have a license")
 elif age >= 18 and has_license == False:
   print("You can't drive. You need to have a license")
@@ -238,35 +238,48 @@ elif speak_french == True and knows_python == False:
 
 # If age is less than 50 then print I am quadragenarian
 
-name = input("What is your name?")
-relative = input("What is your relative's name?")
-age = int(input("What is your age?"))
+# name = input("What is your name?")
+# relative = input("What is your relative's name?")
+# age = int(input("What is your age?"))
 
-if age < 20:
-  print("I am young.")
-elif age < 30:
-  print("I am vicenarian")
-elif age < 40:
-  print("I am tricenarian")
-elif age < 50:
-  print("I am quadragenarian")
-else:
-  print("I am old")
+# if age < 20:
+#   print("I am young.")
+# elif age < 30:
+#   print("I am vicenarian")
+# elif age < 40:
+#   print("I am tricenarian")
+# elif age < 50:
+#   print("I am quadragenarian")
+# else:
+#   print("I am old")
 
 # Decision Making Practice #1
 # ask the user for their age
 # if the user's  is between 18 - 21 , print they can vote, other wise print better luck next time.
 
+# age = int(input("What is your age?"))
+# if age >= 18 and age <= 21:
+#   print("you can vote")
+# else:
+#   print("better luck next time")
+  
 ###################################loops intro######################################
+#lessons
+names = ['John', 'tom', 'ann']
+for item in names:
+  print(f"Hello {item}")
+
+my_list = ['a', 'b', 'c', 'd']
+for dinosaur in my_list:
+  print(f"letter {dinosaur}")
+
+for letter in my_list:
+  letter_number = my_list.index(letter) + 1
+  print(f"letter {letter_number}: {letter}")
+
 # queue videos
 #what is iteration?
 #what are for loops?
-
-age = int(input("What is your age?"))
-if age >= 18 and age <= 21:
-  print("you can vote")
-else:
-  print("better luck next time")
 
 # For Loops Practice #1
 # Using For loops, greet all members of a class, printing "Hello" + their name.
@@ -275,14 +288,15 @@ else:
 
 students = ["Norville", "Fred", "Velma", "Daphne"]
 
-first = students[0]
+for item in students:
+  print(f"Hello {item}")
 
 
 # For Loops Practice #2
 # Given the following list of numbers, calculate the sum of all the numbers using For loops and store the result of the sum in a variable called sum_numbers:
 
 list_numbers = [1,5,8,7,6,8,2,5,2,6,4,8,5,9,8,3,5,4,2,5,6,4]
-# sum_numbers = 
+
 
 
 
