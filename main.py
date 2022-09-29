@@ -1,4 +1,3 @@
-#Andrea Criollo
 # fork the repl.it and create a new git hub repo entitled 
 #Comparison operators
 # Logical operators
@@ -109,8 +108,45 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 
 
 ########################################decision making in python#####################################
+#lessons
+if 5 == 2:
+  print("it is correct")
+else:
+  print("it is not correct")
 
+pet = "dog"
+if pet == "cat":
+  print("you have a cat")
+elif pet == "dog":
+  print("you have a dog")
+else:
+  print("I dont know what animal you have")
 
+age = 16
+schoolGrade = 9
+if age < 18:
+  print("You are a minor")
+  if schoolGrade >= 7:
+    print("passed")#nested if conditionals
+  else:
+    print("failed")
+else: 
+  print("you are an adult")
+
+name = input("What is your name?")
+relative = input("What is your relative's name?")
+age = int(input("What is your age?"))
+
+if age < 20:
+  print("I am young.")
+elif age < 30:
+  print("I am vicenarian")
+elif age < 40:
+  print("I am tricenarian")
+elif age < 50:
+  print("I am quadragenarian")
+else:
+  print("I am old")
 
 # Decision Making Practice #1
 # Using the variables num1 and num2, which are fed with user input (just like in the provided code), create a flow control structure that compares the values of the variables, and returns a result according to the case:
@@ -129,7 +165,16 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 # "num2 is greater than num1"
 # "num1 and num2 are equal"
 
+num1 = int(input("Enter a number:"))
+num2 = int(input("Enter a number:"))
 
+if num1 > num2:
+  print("num1 is greater than num2")
+elif num2 > num1:
+  print("num2 is greater than num1")
+elif num1 == num2:
+  print("num1 and num2 are equal")
+  
 # Decision Making Practice #2
 # The laws of a certain country establish that an adult can drive if they are of legal age (18 years or older), and have a driver's license.
 
@@ -144,12 +189,12 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 # Use the code base already provided to set up the appropriate flow control structure and check those conditions.
 age = 16
 has_license = False
-
-"You can drive"
-
-"You can't drive yet. You must be 18 years old and have a license"
-
-"You can't drive. You need to have a license"
+if age >= 18 and has_license == True:
+  print("You can drive")
+elif age <= 18 and has_license == False:
+  print("You can't drive yet. You must be 18 years old and have a license")
+elif age >= 18 and has_license == False:
+  print("You can't drive. You need to have a license")
 
 # Decision Making Practice #3
 # To access a certain job, the candidate must be able to program in Python and speak French.
@@ -169,14 +214,14 @@ has_license = False
 
 speak_french = True
 knows_python = False
-
-"You meet the requirements to apply"
-
-"To apply, you need to know how to program in Python and speak French"
-
-"To apply, you need to speak French"
-
-"To apply, you need to know how to program in Python"
+if speak_french == True and knows_python == True:
+  print("You meet the requirements to apply")
+elif speak_french == False and knows_python == False:
+  print("To apply, you need to know how to program in Python and speak French")
+elif speak_french == False and knows_python == True:
+  print("To apply, you need to speak French")
+elif speak_french == True and knows_python == False:
+  print("To apply, you need to know how to program in Python")
 
 
 # Decision Making Practice #4
@@ -193,6 +238,20 @@ knows_python = False
 
 # If age is less than 50 then print I am quadragenarian
 
+name = input("What is your name?")
+relative = input("What is your relative's name?")
+age = int(input("What is your age?"))
+
+if age < 20:
+  print("I am young.")
+elif age < 30:
+  print("I am vicenarian")
+elif age < 40:
+  print("I am tricenarian")
+elif age < 50:
+  print("I am quadragenarian")
+else:
+  print("I am old")
 
 # Decision Making Practice #1
 # ask the user for their age
@@ -203,6 +262,11 @@ knows_python = False
 #what is iteration?
 #what are for loops?
 
+age = int(input("What is your age?"))
+if age >= 18 and age <= 21:
+  print("you can vote")
+else:
+  print("better luck next time")
 
 # For Loops Practice #1
 # Using For loops, greet all members of a class, printing "Hello" + their name.
@@ -211,7 +275,7 @@ knows_python = False
 
 students = ["Norville", "Fred", "Velma", "Daphne"]
 
-
+first = students[0]
 
 
 # For Loops Practice #2
